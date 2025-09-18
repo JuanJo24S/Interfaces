@@ -1,0 +1,49 @@
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.task-card {
+  position: relative;
+  transition: all 0.3s ease;
+  border-left: 4px solid #dee2e6;
+}
+
+.task-card.completed {
+  border-left-color: #28a745;
+  opacity: 0.8;
+}
+
+.task-card.high-priority {
+  border-left-color: #dc3545;
+}
+
+.task-card:hover {
+  transform: translateY(-2px);
+}
+
+.priority-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #dee2e6;
+}
+
+.priority-bar.priority-low { background: #28a745; }
+.priority-bar.priority-medium { background: #ffc107; }
+.priority-bar.priority-normal { background: #17a2b8; }
+.priority-bar.priority-high { background: #fd7e14; }
+.priority-bar.priority-very-high { background: #dc3545; }
+
+.modal-content {
+  border-radius: 15px;
+}
+
+.btn {
+  border-radius: 8px;
+}
+
+.form-control, .form-select {
+  border-radius: 8px;
+}
